@@ -24,13 +24,13 @@ const polygonClient = createPublicClient({
 });
 
 export default function App() {
-  const arbitrum = useDataFeed({
+  const polygon = useDataFeed({
     viemClient: polygonClient,
     chainDataFeeds: polygonDataFeeds,
     feedsToSubscribeTo: Object.keys(polygonDataFeeds),
   });
 
-  const fed = Object.values(arbitrum);
+  const fed = Object.values(polygon);
   const length = Object.keys(polygonDataFeeds).length;
 
   return (
