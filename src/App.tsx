@@ -1,8 +1,10 @@
 import { createPublicClient, fallback, http } from "viem";
 import { Row } from "./@/components/Row";
-import { useDataFeed } from "./hooks/useDataFeed";
 import { polygon } from "viem/chains";
-import { polygonDataFeeds } from "@hypotenuselabs/ts-chainlink-datafeed";
+import {
+  polygonDataFeeds,
+  useDataFeed,
+} from "@hypotenuselabs/ts-chainlink-datafeed";
 
 const PolygonRPCList = [
   "https://1rpc.io/matic",

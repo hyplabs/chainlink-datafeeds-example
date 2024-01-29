@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@hypotenuselabs/ts-chainlink-datafeed": "0.0.4",
+    "@hypotenuselabs/ts-chainlink-datafeed": "0.0.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.312.0",
