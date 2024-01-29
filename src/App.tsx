@@ -31,10 +31,12 @@ export default function App() {
   });
 
   const fed = Object.values(arbitrum);
+  const length = Object.keys(polygonDataFeeds).length;
+
   return (
     <main className="max-w-[1080px] m-auto my-10">
       <Row
-        chainName="Polygon - As prices update onchain, they will be displayed below"
+        chainName={`Polygon - As prices update onchain, they will be displayed below. Total feeds: ${length}`}
         feeds={fed}
       />
     </main>
